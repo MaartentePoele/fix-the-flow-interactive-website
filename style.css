@@ -1,0 +1,50 @@
+:root {
+  /* Colors */
+  --color-lucht-blauw: rgb(180 189 208);
+  --color-zee: rgb(8 91 100);
+  --color-paars-blauw: rgb(51 52 103);
+  --color-mos-groen: rgb(109 125 57);
+  --color-toren-oranje: rgb(234 91 12);
+  --color-white: rgb(255 255 255);
+
+  --color1: var(--color-lucht-blauw);
+  --color2: var(--color-zee);
+  --color3: var(--color-paars-blauw);
+  --color4: var(--color-mos-groen);
+  --color5: var(--color-toren-oranje);
+  --color6: var(--color-white);
+
+  /* Font sizes */
+  --font-size-xxl: 2.8rem;
+  --font-size-xl: 1.8rem;
+  --font-size-l: 1.5rem;
+  --font-size-m: 1.2rem;
+  --font-size-s: 1rem;
+  --font-size-xs: 0.8rem;
+}
+
+.scroll-button-zuidoost,
+.scroll-button-oost,
+.scroll-button-nieuw-west {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 25px;
+  height: 25px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  fill: white;
+}
+
+.scroll-button-zuidoost {
+  background-color: var(--color2);
+}
+
+.scroll-button-oost {
+  background-color: var(--color3);
+}
+
+.scroll-button-nieuw-west {
+  background-color: var(--color4);
+}
