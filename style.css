@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
 :root {
   /* Colors */
   --color-lucht-blauw: rgb(180 189 208);
@@ -20,7 +25,26 @@
   --font-size-l: 1.5rem;
   --font-size-m: 1.2rem;
   --font-size-s: 1rem;
-  --font-size-xs: 0.8rem;
+}
+
+.font-size-xxl {
+  font-size: var(--font-size-xxl);
+}
+.font-size-xl {
+  font-size: var(--font-size-xl);
+}
+.font-size-l {
+  font-size: var(--font-size-l);
+}
+.font-size-s {
+  font-size: var(--font-size-s);
+}
+.font-size-s {
+  font-size: var(--font-size-s);
+}
+
+body {
+  margin: 0;
 }
 
 .scroll-button-zuidoost,
@@ -47,4 +71,55 @@
 
 .scroll-button-nieuw-west {
   background-color: var(--color4);
+}
+
+main {
+  height: 500px;
+}
+
+footer {
+  background-color: var(--color1);
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 510px) {
+    flex-direction: row;
+  }
+  gap: 1rem;
+  padding: 2rem 1rem;
+
+  h4 {
+    font-size: var(--font-size-m);
+    @media (min-width: 510px) {
+      font-size: var(--font-size-l);
+    }
+    margin: 0 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .input-field {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: var(--font-size-s);
+    max-width: 300px;
+  }
+
+  .submit-button {
+    background-color: var(--color3);
+    color: var(--color6);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    width: fit-content;
+    margin-top: 0.25rem;
+    font-size: var(--font-size-s);
+  }
 }
