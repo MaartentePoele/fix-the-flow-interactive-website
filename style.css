@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Arial;
+  line-height: 1.4;
 }
 
 :root {
@@ -74,7 +75,56 @@ body {
 }
 
 main {
-  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.articles {
+  display: grid;
+  /* place-items: center; */
+  gap: 2rem;
+  grid-template-columns: 1fr; /* Op mobiel 1 kolom */
+
+  @media (min-width: 678px) {
+    grid-template-columns: 1fr 1fr; /* Op tablet 2 kolommen */
+  }
+
+  @media (min-width: 1100px) {
+    grid-template-columns: 1fr 1fr 1fr; /* Op desktop 3 kolommen */
+  }
+}
+
+article {
+  max-width: 300px;
+
+  .image-container {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  img {
+    display: block;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  }
+
+  .img-vertical {
+    width: 100%;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
+
+  h3 {
+    margin: 0;
+  }
 }
 
 footer {
