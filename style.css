@@ -12,6 +12,7 @@
   --color-mos-groen: rgb(109 125 57);
   --color-toren-oranje: rgb(234 91 12);
   --color-white: rgb(255 255 255);
+  --color-kauwgom: rgb(249 193 157);
 
   --color1: var(--color-lucht-blauw);
   --color2: var(--color-zee);
@@ -19,6 +20,7 @@
   --color4: var(--color-mos-groen);
   --color5: var(--color-toren-oranje);
   --color6: var(--color-white);
+  --color7: var(--color-kauwgom);
 
   /* Font sizes */
   --font-size-xxl: 2.8rem;
@@ -99,13 +101,28 @@ main {
 article {
   max-width: 300px;
 
-  .image-container {
+  .image-container,
+  .image-container-onderwijs,
+  .image-container-stagairs,
+  .image-container-hulp {
     height: 300px;
     width: 300px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     border-radius: 5px;
+  }
+
+  .image-container-onderwijs {
+    background-color: var(--color1);
+  }
+
+  .image-container-stagairs {
+    background-color: var(--color7);
+  }
+
+  .image-container-hulp {
+    background-color: var(--color7);
   }
 
   img {
