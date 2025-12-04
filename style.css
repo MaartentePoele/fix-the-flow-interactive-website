@@ -128,16 +128,19 @@ main {
 
 @keyframes --jump-in {
   0% {
-    translate: 0 -1em;
+    translate: 0 1em;
+    opacity: 0.85;
   }
   100% {
     translate: 0 0;
+    opacity: 1;
   }
 }
 
 article {
   animation-name: --jump-in;
-  /* animation-duration; */
+  animation-duration: 0.25s;
+  animation-timing-function: ease;
 
   max-width: 300px;
 
