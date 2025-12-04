@@ -4,6 +4,10 @@
   line-height: 1.4;
 }
 
+.hidden {
+  display: none;
+}
+
 :root {
   /* Colors */
   --color-lucht-blauw: rgb(180 189 208);
@@ -101,6 +105,10 @@ main {
 article {
   max-width: 300px;
 
+  a {
+    text-decoration: none;
+  }
+
   .image-container,
   .image-container-onderwijs,
   .image-container-stagairs,
@@ -141,6 +149,11 @@ article {
 
   h3 {
     margin: 0;
+    color: var(--color3);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
