@@ -1,63 +1,28 @@
-// --- Declareer alle elementen die ik nodig heb in variabelen ---
+// Selecteer alle buttons
+const buttons = document.querySelectorAll("button");
 
-// Buttons
-const btnStudenten = document.querySelector(".btn-studenten");
-const btnBewoners = document.querySelector(".btn-bewoners");
-const btnWijkpartners = document.querySelector(".btn-wijkpartners");
-const btnHvAMedewerkers = document.querySelector(".btn-hva-medewerkers");
+// Selecteer alle artikelen
+const allArticles = document.querySelectorAll("article");
 
-// Artikelen
-const nieuwsArtikelen = document.querySelectorAll(".article-nieuws");
-const studentenArtikelen = document.querySelectorAll(".article-studenten");
-const bewonersArtikelen = document.querySelectorAll(".article-bewoners");
-const wijkpartnersArtikelen = document.querySelectorAll(
-  ".article-wijkpartners"
-);
-const HvA_medewerkersArtikelen = document.querySelectorAll(
-  ".article-hva-medewerkers"
-);
-const alleArtikelen = document.querySelectorAll("article");
+// Kijk of er op een button wordt geklikt
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Sla de waarde van de button op in een variabele
+    const doelgroep = button.value;
 
-// --- Click events voor de buttons ---
-btnStudenten.addEventListener("click", () => {
-  hideAllArticles();
+    // Selecteer alle artikelen met de doelgroep van de button
+    const doelgroepArticles = document.querySelectorAll(
+      `article.article-${doelgroep}`
+    );
 
-  //Class aanpassen van artikelen om ze zichtbaar te maken
-  studentenArtikelen.forEach(function (studentArtikel) {
-    studentArtikel.classList.remove("hidden");
+    // Verberg alle artikelen
+    allArticles.forEach((article) => {
+      article.classList.add("hidden");
+    });
+
+    // Selecteer de doelgroepartikelen en maak ze zichtbaar
+    doelgroepArticles.forEach((article) => {
+      article.classList.remove("hidden");
+    });
   });
 });
-
-btnBewoners.addEventListener("click", () => {
-  hideAllArticles();
-
-  //Class aanpassen van artikelen om ze zichtbaar te maken
-  bewonersArtikelen.forEach(function (bewonerArtikel) {
-    bewonerArtikel.classList.remove("hidden");
-  });
-});
-
-btnWijkpartners.addEventListener("click", () => {
-  hideAllArticles();
-
-  //Class aanpassen van artikelen om ze zichtbaar te maken
-  wijkpartnersArtikelen.forEach(function (wijkpartnerArtikel) {
-    wijkpartnerArtikel.classList.remove("hidden");
-  });
-});
-
-btnHvAMedewerkers.addEventListener("click", () => {
-  hideAllArticles();
-
-  //Class aanpassen van artikelen om ze zichtbaar te maken
-  HvA_medewerkersArtikelen.forEach(function (HvA_medewerkerArtikel) {
-    HvA_medewerkerArtikel.classList.remove("hidden");
-  });
-});
-
-// Function om alle artikelen op hidden te zetten
-function hideAllArticles() {
-  alleArtikelen.forEach(function (artikel) {
-    artikel.classList.add("hidden");
-  });
-}

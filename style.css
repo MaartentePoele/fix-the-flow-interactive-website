@@ -87,6 +87,30 @@ main {
   padding-bottom: 2rem;
 }
 
+.article-nav {
+  background-color: var(--color2);
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+
+  button {
+    width: fit-content;
+    background: none;
+    border: none;
+    color: var(--color6);
+    font-size: var(--font-size-m);
+    padding: 0.1rem;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
 .articles {
   display: grid;
   /* place-items: center; */
@@ -102,7 +126,19 @@ main {
   }
 }
 
+@keyframes --jump-in {
+  0% {
+    translate: 0 -1em;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+
 article {
+  animation-name: --jump-in;
+  /* animation-duration; */
+
   max-width: 300px;
 
   a {
