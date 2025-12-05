@@ -88,13 +88,34 @@ main {
 }
 
 .article-nav {
-  background-color: var(--color2);
+  background-color: var(--color3);
   display: flex;
   flex-direction: column;
-  max-width: fit-content;
+  max-width: 208px;
   padding: 1rem;
   border-radius: 1rem;
   margin: 1rem;
+
+  .svg-filter {
+    width: 18px;
+    margin-right: 0.5rem;
+  }
+
+  a {
+    color: var(--color6);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .filter {
+    color: var(--color6);
+    font-size: var(--font-size-l);
+    margin: 0;
+    font-weight: 700;
+  }
 
   button {
     width: fit-content;
@@ -107,6 +128,10 @@ main {
     &:hover {
       cursor: pointer;
       text-decoration: underline;
+    }
+
+    &:focus {
+      padding-left: 1rem;
     }
   }
 }
