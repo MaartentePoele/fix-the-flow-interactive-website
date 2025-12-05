@@ -8,8 +8,8 @@ const allArticles = document.querySelectorAll("article");
 const articleHeader = document.querySelector(".article-header");
 
 // Kijk of er op een button wordt geklikt
-allButtons.forEach((button) => {
-  button.addEventListener("click", () => {
+allButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
     // Sla de waarde van de button op in een variabele
     const doelgroep = button.value;
 
@@ -22,12 +22,12 @@ allButtons.forEach((button) => {
     articleHeader.textContent = doelgroep;
 
     // Verberg alle artikelen
-    allArticles.forEach((article) => {
+    allArticles.forEach(function (article) {
       article.classList.add("hidden");
     });
 
     // Selecteer de doelgroepartikelen en maak ze zichtbaar
-    doelgroepArticles.forEach((article) => {
+    doelgroepArticles.forEach(function (article) {
       article.classList.remove("hidden");
     });
   });
