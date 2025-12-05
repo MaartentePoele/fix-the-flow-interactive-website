@@ -15,7 +15,7 @@ allButtons.forEach(function (button) {
 
     // Selecteer alle artikelen met de doelgroep van de button
     const doelgroepArticles = document.querySelectorAll(
-      `article.article-${doelgroep}`
+      "article.article-" + doelgroep
     );
 
     // Verander de naam van de header
