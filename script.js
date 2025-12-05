@@ -4,6 +4,9 @@ const allButtons = document.querySelectorAll("button");
 // Selecteer alle artikelen
 const allArticles = document.querySelectorAll("article");
 
+// Selecteer header boven de artikelen
+const articleHeader = document.querySelector(".article-header");
+
 // Kijk of er op een button wordt geklikt
 allButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -14,6 +17,9 @@ allButtons.forEach((button) => {
     const doelgroepArticles = document.querySelectorAll(
       `article.article-${doelgroep}`
     );
+
+    // Verander de naam van de header
+    articleHeader.textContent = `${doelgroep}`;
 
     // Verberg alle artikelen
     allArticles.forEach((article) => {
