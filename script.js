@@ -19,7 +19,7 @@ allButtons.forEach((button) => {
     );
 
     // Verander de naam van de header
-    articleHeader.textContent = `${doelgroep}`;
+    articleHeader.textContent = doelgroep;
 
     // Verberg alle artikelen
     allArticles.forEach((article) => {
