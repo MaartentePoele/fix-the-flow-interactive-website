@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "BuurtCampusArial-Bold";
+  src: url("fonts/BuurtCampusArial-Bold.ttf");
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
   font-family: Arial;
@@ -85,6 +91,7 @@ header {
   display: grid;
   place-items: center;
   padding: 1rem;
+  background-color: var(--color1);
 
   @media (min-width: 768px) and (max-width: 1200px) {
     display: flex;
@@ -134,14 +141,16 @@ nav {
 }
 
 a {
-  font-family: "BuurtCampusArial-Bold", Arial;
-  text-transform: uppercase;
   color: var(--color3);
   font-size: var(--font-size-l);
   text-decoration: none;
 
   h1 {
     margin: 0;
+    font-family: "BuurtCampusArial-Bold", Arial;
+    text-transform: uppercase;
+
+    font-size: var(--font-size-l);
     @media (min-width: 480px) {
       font-size: var(--font-size-xl);
     }
@@ -296,6 +305,7 @@ article {
 
   h3 {
     margin: 0;
+    font-size: var(--font-size-s);
     color: var(--color3);
 
     &:hover {
