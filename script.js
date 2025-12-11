@@ -32,3 +32,14 @@ allButtons.forEach(function (button) {
     });
   });
 });
+
+// Wolkjes animatie
+cloud1 = document.querySelector(".cloud1");
+cloud1.addEventListener("click", function () {
+  cloud1.classList.add("fly");
+});
+
+cloud2 = document.querySelector(".cloud2");
+cloud2.addEventListener("click", function () {
+  cloud2.classList.add("fade");
+});

@@ -91,7 +91,6 @@ header {
   display: grid;
   place-items: center;
   padding: 1rem;
-  background-color: var(--color1);
 
   @media (min-width: 768px) and (max-width: 1200px) {
     display: flex;
@@ -101,6 +100,22 @@ header {
   @media (min-width: 1200px) {
     display: flex;
   }
+}
+
+.header-main {
+  background-color: var(--color1);
+}
+
+.header-zuidoost {
+  background-color: var(--color2);
+}
+
+.header-oost {
+  background-color: var(--color3);
+}
+
+.header-nieuw-west {
+  background-color: var(--color4);
 }
 
 nav {
@@ -159,6 +174,50 @@ a {
       font-size: var(--font-size-xxl);
     }
   }
+}
+
+.header-zuidoost h1,
+.header-zuidoost a,
+.header-oost h1,
+.header-oost a,
+.header-nieuw-west h1,
+.header-nieuw-west a {
+  color: var(--color6);
+}
+
+.cloud1,
+.cloud2 {
+  width: 200px;
+  display: none;
+
+  @media (min-width: 1150px) {
+    display: inline;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.cloud1 {
+  transition: 2s;
+}
+
+.cloud2 {
+  width: 150px;
+  transition: 0.5s;
+
+  @media (min-width: 1400px) {
+    display: inline;
+  }
+}
+
+.fly {
+  translate: -100vw;
+}
+
+.fade {
+  opacity: 0;
 }
 
 main {
