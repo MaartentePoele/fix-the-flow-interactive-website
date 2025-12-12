@@ -194,10 +194,6 @@ a {
   width: 200px;
   display: none;
 
-  @media (min-width: 1150px) {
-    display: inline;
-  }
-
   &:hover {
     cursor: pointer;
   }
@@ -205,6 +201,9 @@ a {
 
 .cloud1 {
   transition: 2s;
+  @media (min-width: 1150px) {
+    display: inline;
+  }
 }
 
 .cloud2 {
