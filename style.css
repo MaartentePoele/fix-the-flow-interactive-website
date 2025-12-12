@@ -201,6 +201,7 @@ a {
 
 .cloud1 {
   transition: 2s;
+
   @media (min-width: 1150px) {
     display: inline;
   }
