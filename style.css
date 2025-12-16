@@ -438,5 +438,9 @@ footer {
     width: fit-content;
     margin-top: 0.25rem;
     font-size: var(--font-size-s);
+
+    &:active {
+      box-shadow: 2px 2px 5px black;
+    }
   }
 }
