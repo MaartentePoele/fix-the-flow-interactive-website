@@ -16,8 +16,6 @@ Klik [hier](https://maartentepoele.github.io/fix-the-flow-interactive-website/) 
 
 De Buurtcampuskrant is een door HvA-studenten gemaakte website wat de inhoud van de fysieke Buurtcampuskrant mooi op een website weergeeft.
 
-Uitleg van de user story
-
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 De voorpagina is opgebouwd met een header, main en footer. In de header... in de main... in de footer...
