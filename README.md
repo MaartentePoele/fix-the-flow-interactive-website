@@ -4,17 +4,17 @@
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 Digitale versie van de Buurtcampuskrant
 
+## User story
+Als gebruiker wil ik alle artikelen op doelgroep kunnen filteren, zodat ik artikelen kan bekijken die bij mij horen.
+
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 Klik [hier](https://maartentepoele.github.io/fix-the-flow-interactive-website/) om de website zelf te bekijken!
+<img width="1800" height="760" alt="3-devices-black" src="https://github.com/user-attachments/assets/16e29e92-8d50-42b1-b280-8062975ce754" />
 
-Foto op verschillende devices
-
-De Buurtcampuskrant is ...
-
-In deze sprint heb ik vooral gewerkt aan deze user story:
+De Buurtcampuskrant is een door HvA-studenten gemaakte website wat de inhoud van de fysieke Buurtcampuskrant mooi op een website weergeeft.
 
 Uitleg van de user story
 
